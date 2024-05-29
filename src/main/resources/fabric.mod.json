@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "sorter-plus",
+	"version": "${version}",
+	"name": "Sorter+",
+	"description": "Sort your inventory with a single click!",
+	"authors": [
+		"Skiexx"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/sorter-plus/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.skiexx.sorterplus.Sorter"
+		],
+		"fabric-datagen": [
+			"com.skiexx.sorterplus.SorterDataGenerator"
+		]
+	},
+	"mixins": [
+		"sorter-plus.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
